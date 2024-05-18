@@ -1,0 +1,92 @@
+.ninos {
+    background-color: #141414;
+    height: 100vh; /* Asegura que el contenedor tenga la altura total de la ventana del navegador */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.options-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around; /* Mantiene una distribución uniforme */
+    align-items: center;
+    gap: 30px; /* Añade un espacio entre las opciones */
+}
+
+.option {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: calc(50% - 40px); /* Ajusta esta fórmula si es necesario para controlar el ancho */
+    margin: 10px; /* Añade margen para separar las opciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.option-image {
+    width: 100%;
+    height: 400px; /* Fija una altura específica para las imágenes */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.option-details {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.reserve-button {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #312a6c;
+}
+
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column;
+    }
+
+    .option {
+        width: 100%; /* Ajusta el ancho para dispositivos más pequeños */
+    }
+
+    .option-image {
+        height: 300px; /* Altura ajustada para dispositivos más pequeños */
+    }
+}
+
+/* Estilo para el título */
+.ninos h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 10vh; /* Tamaño grande basado en la altura de la ventana */
+    font-style: italic;
+    color: #42338e; /* Color morado específico */
+    margin: 0 0 20px 0; /* Remueve el margen por defecto para centrar correctamente */
+    width: 100%; /* Asegura que el título se extienda en todo el ancho disponible */
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    position: relative; /* Posicionamiento relativo para mover el título */
+    top: 0px; /* Mueve el título 50px hacia arriba */
+    transform: translateY(-50%); /* Ajusta el desplazamiento para centrar verticalmente */
+}

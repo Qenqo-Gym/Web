@@ -1,0 +1,524 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  user-select: none;
+  cursor: default;
+  background-color: #141414;
+}
+
+/* Estilo para el contenedor de las secciones */
+@media screen and (min-aspect-ratio: 21/9) {
+  .App {
+    margin: 0 auto;
+    max-width: 1800px;
+  }
+
+  .testimonial img {
+    width: 100%;
+    height: 40vh;
+    aspect-ratio: 4 / 3;
+    /* Esto hará que las imágenes sean más cuadradas */
+    object-fit: fill;
+    /* Ajusta para controlar el espacio entre servicios */
+  }
+}
+
+.snap-container {
+  
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Estilo para cada sección */
+.section {
+  height: 100vh;
+  /* Asegura que cada sección ocupe toda la altura del viewport */
+  scroll-snap-align: start;
+  /* Alinea la sección al inicio del contenedor al desplazarse */
+}
+
+.hero-section {
+  background-image: url("../../public/images/home.jpg");
+  /* fondo gris sobre la imagen*/
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  /* Espacio desde la parte superior de la pantalla */
+  left: 5rem;
+  /* Espacio desde la parte izquierda de la pantalla */
+  width: auto;
+  /* Ancho del logo basado en el ancho del viewport */
+  max-width: 200px;
+  /* Un máximo para que no se vea demasiado grande en pantallas grandes */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 20vw;
+    /* Un poco más pequeño en pantallas medianas */
+    top: 1.5rem;
+    left: 0.5rem;
+  }
+}
+@font-face {
+  font-family: 'Archena';
+  src: url('../../public/fonts/Archena.otf') format('truetype');
+  font-weight: 900; /* Black weight is typically 900 */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vibrocentric';
+  src: url('../../public/fonts/Vibrocentric Rg.otf') format('truetype');
+  font-weight: 900; /* Black weight is typically 900 */
+  font-style: normal;
+}
+
+.title1 {
+  font-family:'Archena';
+  src: url('../../public/fonts/Archena.otf') format('truetype');
+  font-weight: 900; /* Black weight is typically 900 */
+  font-style: normal;
+  font-size: calc(3vw + 3vh);
+  color: white;
+  margin: -2vh 0 -2vh 0;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+.title2 {
+  font-family:'Archena';
+  src: url('../../public/fonts/Archena.otf') format('truetype');
+  font-weight: 900;
+  font-size: calc(3vw + 3vh);
+  font-style: normal;
+  color: #42338e;
+  margin: 1vh 0 1vh 0;
+  padding: 0;
+  /*font  shadow */
+  text-shadow: 2px 2px 4px #000000;
+}
+.title3 {
+  font-family: 'Vibrocentric';
+  src: url('../../public/fonts/Vibrocentric Rg.otf') format('truetype');
+   font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+  margin: 0;
+  width: 80%;
+}
+
+
+@media (max-width: 480px) {
+  .title1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: calc(3vw + 3vh);
+    font-style: italic;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: calc(3vw + 3vh);
+    font-style: italic;
+    color: #42338e;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+}
+.about-us {
+  background-color: #141414;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  width: 100vw;
+}
+
+.about-us .text {
+  flex: 1;
+}
+
+.about-us .subtitle {
+  font-family:'Archena';
+  src: url('../../public/fonts/Archena.otf') format('truetype');
+  font-weight: 400;
+  font-size: 10vh;
+  font-style: italic;
+  color: #42338e;
+  width: auto;
+  margin: 0;
+}
+
+.textaboutus {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+  margin: 0;
+  width: 80%;
+}
+
+.about-us .img {
+  flex: 1;
+}
+
+.imgaboutus1 {
+  max-width: 100vw;
+  height: 50vh;
+  max-height: 30vw;
+  transform: translate(0%, -25%);
+}
+
+.imgaboutus2 {
+  max-width: 100vw;
+  height: 50vh;
+  max-height: 30vw;
+  transform: translate(10%, 25%);
+}
+
+@media (max-height: 1080px) {
+  .imgaboutus1 {
+    max-height: 30vw;
+  }
+
+  .imgaboutus2 {
+    max-height: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .imgaboutus1 {
+    display: none;
+  }
+
+  .imgaboutus2 {
+    display: none;
+  }
+
+  .about-us .subtitle {
+    font-size: 7vh;
+    width: 40vh;
+    text-align: center;
+  }
+
+  .about-us p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.contact {
+  background-image: url("../../public/images/imgservices.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  /* Elementos alineados en fila */
+  align-items: center;
+  /* Centrado vertical */
+  justify-content: space-around;
+  /* Espaciado alrededor para usar más espacio horizontal */
+  height: 100vh;
+  color: #ffffff;
+  padding: 0 50px;
+  /* Padding horizontal más grande */
+}
+
+.contact .text {
+  width: 20vw;
+}
+
+.contact h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: calc(3vw + 4vh);
+  /* Tamaño dinámico según la vista */
+  color: #42338e;
+  text-align: center;
+  /* Asegura que el texto esté centrado */
+}
+
+
+.form-container {
+  width: 40vw;
+  /* Aumento del ancho del formulario */
+
+  /* Máximo ancho del formulario para no ser demasiado grande */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Alineación de los elementos internos */
+  padding: 20px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* Alinea los elementos en una columna */
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  background: rgba(255, 255, 255, 1);
+  /* Fondo claro con algo de transparencia */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #42338e;
+}
+
+button {
+  background-color: #42338e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* Menos padding para un botón menos ancho */
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+  /* Alinea el botón al inicio del formulario */
+  transition: background-color 0.2s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #312a65;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    /* Cambia a columna en móviles */
+  }
+
+  .contact .text {
+    width: 40vw;
+  }
+
+  .contact h2 {
+
+    font-size: calc(4vw + 4vh);
+  }
+
+  .contact .subtitle {
+    margin-right: 0;
+    /* Elimina margen derecho en móviles */
+    margin-bottom: 20px;
+    /* Espaciado antes del formulario */
+  }
+
+  .form-container {
+    width: 80vw;
+
+  }
+
+  form {
+    width: 100%;
+    /* Ancho completo en móviles */
+  }
+
+}
+
+/* .services {
+  background-color: #141414;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.services .text {
+  padding: 3vw 0 2vw 0;
+}
+.services h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 10vh;
+  font-style: italic;
+  color: #42338e;
+  width: auto;
+  margin: 0;
+}
+.services h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+  margin: 0 1em 1em 1em;
+}
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service {
+  position: relative;
+  width: calc(25%);
+}
+
+.service img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.service p {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  position: absolute;
+  color: #fff;
+  padding: 5px;
+  bottom: 40%; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .services {
+    background-color: #141414;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .services-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .service {
+    width: 100%; 
+    margin-bottom: 20px; 
+
+  .service img {
+    width: 80%; 
+    height: 50vh; 
+  }
+
+  .service p {
+    position: absolute;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .services h2 {
+    font-size: 8vh;
+  }
+}
+
+.testimonials {
+  background-color: #141414;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.testimonials h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 10vh;
+  font-style: italic;
+  color: #42338e;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  padding: 4rem 0 0 0;
+  word-wrap: break-word;
+}
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.testimonial {
+  position: relative;
+  width: calc(25%);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial img {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  aspect-ratio: 4 / 3; 
+  object-fit: fill; 
+.box {
+  background-color: #42338e;
+  margin: 0;
+  padding: 1rem;
+}
+.box p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 1000;
+  font-size: 2vh;
+  color: #fff;
+}
+.box footer {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 2vh;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    height: max-content;
+  }
+  .testimonials h2 {
+    font-size: 8vh;
+  }
+  .testimonials-container {
+    flex-direction: column; 
+    align-items: center;
+    
+  }
+  .testimonial {
+    width: 80%; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .testimonials h2 {
+    font-size: 7vh;
+  }
+}
+ */
