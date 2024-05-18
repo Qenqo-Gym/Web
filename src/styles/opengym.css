@@ -1,0 +1,103 @@
+.opengym {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  /* Cambiado de 'center' para permitir una disposición vertical */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.video-container video {
+    height: 110%; /* Ajusta este valor según sea necesario */
+    width: 50%; /* Ajusta este valor para cambiar el tamaño del video */
+    margin-left: 70%;
+}
+
+
+.content-container {
+    width: 45%; /* Ajusta este valor según sea necesario */
+    text-align: center;
+}
+
+.opengym h2 {
+    font-family: "Anton", sans-serif; /* Considera cambiar a una fuente que soporte estilos más gruesos si Anton no es suficiente */
+    font-weight: 700; /* Hace el texto más grueso; ajusta según necesidades */
+    font-size: 5rem;
+    font-style: italic; /* Mantiene un tamaño de fuente grande */
+    color: #42338e; /* Color blanco para legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    position: absolute;
+    top: 6vh; /* Posición verticalmente en la vista */
+    width: 100%; /* Asegura que el título se extienda en todo el ancho disponible */
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    text-transform: uppercase; /* Opcional: Transforma el texto a mayúsculas para más impacto */
+    font-stretch: expanded; /* Hace que las letras sean más anchas visualmente */
+}
+
+
+.details-container {
+    background-color: rgba(67, 51, 142, 0.9); /* Color de fondo semi-transparente */
+    padding: 30px; /* Padding para un mejor espaciado */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px; /* Limita el ancho del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+    position: absolute;
+    margin-left: -20%;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
+    color: #FFFFFF; /* Color de texto */
+    font-family: 'Arial', sans-serif; /* Fuente más genérica y limpia */
+    border: 5px solid white;
+    
+}
+
+.details-container p {
+    font-size: 1.5rem; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre los elementos de texto */
+}
+
+.details-container .highlight {
+    font-size: 2rem; /* Tamaño del texto más grande para el título */
+    font-weight: bold; /* Negrita para resaltar */
+    margin-top: 10px; /* Reducido para acercar al borde superior */
+}
+
+
+.details-container ul li {
+    font-size: 10rem; /* Nuevo tamaño de fuente más pequeño para los elementos de la lista */
+    margin-bottom: 15px;
+}
+
+.reserve-button {
+    padding: 12px 25px;
+    background-color: #312a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    display: block; /* Hace que el botón se muestre en su propia línea */
+    width: max-content; /* Ajusta el ancho al contenido */
+    margin-top: 20px; /* Espacio antes del botón */
+    margin-left: auto; /* Alinea el botón a la derecha */
+}
+
+.reserve-button:hover {
+    background-color: #42338e;
+}
+
+@media (max-width: 768px) {
+    .details-container {
+        padding: 10px;
+    }
+}

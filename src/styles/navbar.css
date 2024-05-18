@@ -1,0 +1,60 @@
+body,
+ul,
+li,
+a {
+  margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Centrar horizontalmente el navbar */
+    transform: translateX(-50%); /* Ajustar el centrado correctamente */
+    display: flex;
+    justify-content: center; /* Alineaci�n de los enlaces */
+    padding: 10px 20px;
+    z-index: 1;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: auto;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li {
+  padding: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff; /* Change as per the color you want */
+  font-size: 20px;
+  font-weight: 1000;
+  -webkit-text-stroke: 1px black;
+
+}
+@media (max-width: 768px) {
+    .navbar-links a {
+      font-size: 14px;
+      font-weight: 1000;
+      -webkit-text-stroke: 0px black;
+    }
+  }
+@media (max-width: 480px) {
+    .navbar-links a {
+      font-size: 9px;
+      font-weight: 500;
+      -webkit-text-stroke: 0px black;
+    }
+  }
+
+
+/* Additional styles for active/hover state */
+.navbar-links a:hover,
+.navbar-links .active {
+  color: #42338e; /* Change as per the color you want */
+  -webkit-text-stroke: 0px black;
+
+}

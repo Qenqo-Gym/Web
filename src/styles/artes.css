@@ -1,0 +1,94 @@
+.artes {
+    background-color: #141414;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.options-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.option {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: calc(50% - 40px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Agregado para posición relativa */
+}
+
+.option-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.option-details {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #FFF;
+    position: absolute; /* Posiciona los detalles sobre la imagen */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrado */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+}
+
+.overlay {
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Ocupa el ancho completo de la imagen */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.reserve-button {
+    padding: 10px 20px;
+    background-color: #42338e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.reserve-button:hover {
+    background-color: #312a6c;
+}
+
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column;
+    }
+
+    .option {
+        width: 100%;
+    }
+
+    .option-image {
+        height: 300px;
+    }
+}

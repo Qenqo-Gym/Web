@@ -1,0 +1,84 @@
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal {
+    position: relative;
+    width: 40%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    /* Cambia esto a un color que contraste con el fondo */
+}
+
+.close-button:hover {
+    background: none;
+    /* Asegúrate de que el fondo no cambie */
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: #42338E;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.button-reservar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button-reservar:hover {
+    background-color: #333;
+}
+
+.video-container {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 300px;
+    /* Fija el ancho del video */
+    height: 400px;
+    /* Fija la altura del video */
+    object-fit: cover;
+    /* Recorta el video para que sea cuadrado */
+}
