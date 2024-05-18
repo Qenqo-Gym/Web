@@ -6,7 +6,15 @@ function Home() {
           {/* Sección Hero */}
           <div className="hero-section section " id="home">
             <div>
-              <img src="/images/logo.png" alt="Logo" className="logo" />
+              <img src="/images/logo.png" alt="Logo" className="logo"
+              style={
+                {
+                  position: 'absolute',
+                  objectFit: 'cover',
+                  zIndex: '2'
+                }
+              }
+              />
             </div>
             <div>
               <h1 className='title1'>"El resultado de tu entrenamiento</h1>
@@ -17,8 +25,8 @@ function Home() {
           {/* Sección Contacto */}
           <section className="contact section" id="contacto">
           <div>
-              <h1 className='title2'>"Empieza</h1>
-              <h1 className='title2'>el cambio"</h1>
+              <h1 className='title2'>"Empieza <br></br> el cambio"</h1>
+              
             </div>
             <div className="form-container">
               <form>

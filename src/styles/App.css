@@ -42,6 +42,7 @@ html {
 
 .hero-section {
   background-image: url("../../public/images/home.jpg");
+  /* fondo gris sobre la imagen*/
   background-size: cover;
   background-position: center;
   display: flex;
@@ -94,6 +95,8 @@ html {
   font-size: calc(3vw + 3vh);
   color: white;
   margin: -2vh 0 -2vh 0;
+  text-shadow: 2px 2px 4px #000000;
+
 }
 .title2 {
   font-family:'Archena';
@@ -102,8 +105,10 @@ html {
   font-size: calc(3vw + 3vh);
   font-style: normal;
   color: #42338e;
-  margin: -2vh 0 -2vh 0;
+  margin: 1vh 0 1vh 0;
   padding: 0;
+  /*font  shadow */
+  text-shadow: 2px 2px 4px #000000;
 }
 .title3 {
   font-family: 'Vibrocentric';
@@ -278,6 +283,7 @@ html {
 form {
   display: flex;
   flex-direction: column;
+  /* Alinea los elementos en una columna */
   width: 100%;
 }
 
@@ -288,9 +294,9 @@ textarea {
   /* Fondo claro con algo de transparencia */
   border: 1px solid #ccc;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 18px;
   color: #42338e;
 }
 
@@ -302,10 +308,11 @@ button {
   /* Menos padding para un botón menos ancho */
   cursor: pointer;
   border-radius: 5px;
-  align-self: flex-start;
+  align-self: flex-end;
   /* Alinea el botón al inicio del formulario */
   transition: background-color 0.2s;
   font-size: 16px;
+  font-weight: bold;
 }
 
 button:hover {
