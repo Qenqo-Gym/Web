@@ -42,9 +42,6 @@ function Navbar() {
                   <Link to="/servicios" onClick={toggleMenu}>SERVICIOS</Link>
                 </li>
                 <li>
-                  <Link to="#testimonios" onClick={toggleMenu}>TESTIMONIOS</Link>
-                </li>
-                <li>
                   <Link to="#contacto" onClick={toggleMenu}>CONTACTO</Link>
                 </li>
               </ul>
@@ -62,9 +59,6 @@ function Navbar() {
             </li>
             <li>
               <Link to="/servicios">SERVICIOS</Link>
-            </li>
-            <li>
-              <Link to="#testimonios">TESTIMONIOS</Link>
             </li>
             <li>
               <Link to="#contacto">CONTACTO</Link>
