@@ -34,11 +34,12 @@ const Training = () => {
                     content={(
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <div style={{ flex: 1 }}>
-                                <h2>PLAN ANTISUYO</h2>
-                                <p>S/.295,00 (POR PERSONA)<br />(3 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>S/.350,00 (POR PERSONA)<br />(5 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>Horarios<br />(LUNES A VIERNES)<br />5:00AM a 8:00AM<br />6:00AM a 8:00PM</p>
-                                <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
+                                <h3 className="title4">PLAN ANTISUYO</h3>
+                                <p className="title5">S/.1.500,00<br />20 sesiones</p>
+                                <p className="title5">-1 PLAN NUTRICIONAL PERSONALIZADO</p>
+                                <p className="title5">-4 EVALUACIONES ANTROPOMÉTRICAS ISAK 1</p>
+                                <p className="title5">-ASESORAMIENTO EN SUPLEMENTACIÓN</p>
+                                <p className="title5">5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
                             <div style={{ flex: 1, marginLeft: '20px' }}>
@@ -56,11 +57,12 @@ const Training = () => {
                     content={(
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <div style={{ flex: 1 }}>
-                                <h3>PLAN QENQO</h3>
-                                <p>S/.295,00 (POR PERSONA)<br />(3 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>S/.350,00 (POR PERSONA)<br />(5 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>Horarios<br />(LUNES A VIERNES)<br />5:00AM a 8:00AM<br />6:00AM a 8:00PM</p>
-                                <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
+                                <h3 className="title4">PLAN QENQO</h3>
+                                <p className="title5">S/.1.200,00<br />12 sesiones</p>
+                                <p className="title5">-1 PLAN NUTRICIONAL PERSONALIZADO</p>
+                                <p className="title5">-4 EVALUACIONES ANTROPOMÉTRICAS ISAK 1</p>
+                                <p className="title5">-ASESORAMIENTO EN SUPLEMENTACIÓN</p>
+                                <p className="title5">5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
                             <div style={{ flex: 1, marginLeft: '20px' }}>
@@ -78,11 +80,11 @@ const Training = () => {
                     content={(
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <div style={{ flex: 1 }}>
-                                <h2>PLAN PUMA</h2>
-                                <p>S/.295,00 (POR PERSONA)<br />(3 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>S/.350,00 (POR PERSONA)<br />(5 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>Horarios<br />(LUNES A VIERNES)<br />5:00AM a 8:00AM<br />6:00AM a 8:00PM</p>
-                                <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
+                                <h3 className="title4">PLAN PUMA</h3>
+                                <p className="title5">S/.900,00<br />8 sesiones</p>
+                                <p className="title5">-1 GUÍA NUTRICIONAL</p>
+                                <p className="title5">-1 EVALUACIONES ANTROPOMÉTRICAS ISAK 1</p>
+                                <p className="title5">5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
                             <div style={{ flex: 1, marginLeft: '20px' }}>
@@ -100,11 +102,17 @@ const Training = () => {
                     content={(
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <div style={{ flex: 1 }}>
-                                <h2>PLAN FORTALEZA</h2>
-                                <p>S/.295,00 (POR PERSONA)<br />(3 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>S/.350,00 (POR PERSONA)<br />(5 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
-                                <p>Horarios<br />(LUNES A VIERNES)<br />5:00AM a 8:00AM<br />6:00AM a 8:00PM</p>
-                                <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
+                                <h3 className="title4">PLAN FORTALEZA</h3>
+                                <p className="title5">S/.500,00 (POR PERSONA)<br />(20 SESIONES)</p>
+                                <p className="title5">-1 PLAN NUTRICIONAL PERSONALIZADO</p>
+                                <p className="title5">-4 EVALUACIONES ANTROPOMÉTRICAS ISAK 1</p>
+                                <p className="title5">-ASESORAMIENTO EN SUPLEMENTACIÓN</p>
+                                <p className="title5">5% adicional por POS</p>
+                                <p className="title5">S/.400,00 (POR PERSONA)<br />(12 SESIONES)</p>
+                                <p className="title5">-1 PLAN NUTRICIONAL PERSONALIZADO</p>
+                                <p className="title5">-4 EVALUACIONES ANTROPOMÉTRICAS ISAK 1</p>
+                                <p className="title5">-ASESORAMIENTO EN SUPLEMENTACIÓN</p>
+                                <p className="title5">5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
                             <div style={{ flex: 1, marginLeft: '20px' }}>

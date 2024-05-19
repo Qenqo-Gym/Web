@@ -1,31 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/ninos.css';
+import './styles/nutricion.css';
 
-function Ninos() {
-    const trainingOptions = [
-        { id: 1, timesPerWeek: 2, price: 295, image: '/images/nino2.png', description: '2 veces por semana' },
-        { id: 2, timesPerWeek: 3, price: 350, image: '/images/ninos3.png', description: '3 veces por semana' }
-    ];
-
+function Nutricion() {
     return (
-        <div className="ninos">
-            <h2>KIDS</h2>
-            <div className="options-container">
-                {trainingOptions.map((option) => (
-                    <div key={option.id} className="option">
-                        <img src={option.image} alt={`${option.description}`} className="option-image" />
-                        <div className="option-details">
-                            <h3>{option.description}</h3>
-                            <p>S/{option.price}.00 (por persona)</p>
-                            <Link to="/reservar" className="reserve-button">Reservar</Link>
-                        </div>
-                    </div>
-                ))}
+        <div className="nutricion" style={{ backgroundImage: "url('/images/Nutricion.jpg')" }}>
+            <h2>Nutrición</h2>  {/* Asegurarse de que el título está fuera del contenedor de detalles */}
+            <div className="details-container">
+                <h3>Plan de Alimentación Mensual: S/.200,00</h3>
+                <h1 >-Se envía una semana de menú el cual cambia mensualmente</h1>
+                <h1>-Incluye 4 evaluaciones semanales</h1>
+                <h3>Plan de Alimentación Quincenal:: S/.300,00</h3>
+                <h1 >-Se te envía una semana de menú el cual cambia cada dos semanas</h1>
+                <h1>-Incluye 4 evaluaciones semanales</h1>
+                <h3>Plan de Alimentación Semanal:: S/.400,00</h3>
+                <h1 >-Se te envía una semana de menú el cual cambia cada semana</h1>
+                <h1>-Incluye 4 evaluaciones semanales</h1>
+                <h3>Evaluación Antropométrica: S/.40,00</h3>
+                <Link to="/reservar" className="reserve-button">Reservar</Link>
             </div>
+            <div className="video-container">
+                    <video autoPlay loop muted>
+                        <source src="/videos/qenqo1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
         </div>
+        
     );
 }
 
-export default Ninos;
+export default Nutricion;
 
