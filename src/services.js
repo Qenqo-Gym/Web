@@ -11,9 +11,23 @@ function Services() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false, /* cambiar despues de debuggear*/
         autoplaySpeed: 2000,
         pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
     const images = [
         { id: 1, src: '/images/open_gym.jpg', alt: 'Planes de Entrenamiento', title: 'PLANES DE ENTRENAMIENTO', url: "/planes-de-entrenamiento" },
@@ -34,7 +48,7 @@ function Services() {
                             <Link to={image.url}>
                                 <div className="image-container">
                                     <img src={image.src} alt={image.alt} className="carousel-image" />
-                                    <h3>{image.title}</h3>
+                                    <h4>{image.title}</h4>
                                 </div>
                             </Link>
                         </div>
