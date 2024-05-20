@@ -11,7 +11,7 @@ const Training = () => {
                     name="INTIHUA"
                     content={(
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <div style={{ flex: 1 }}>
+                            <div style={{ flex: 2 }}>
                                 <h3 className="title4">PLAN INTIHUA</h3>
                                 <p className="title5">S/.295,00 (POR PERSONA)<br />(3 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
                                 <p className="title5">S/.350,00 (POR PERSONA)<br />(5 VECES POR SEMANA + 1 GUÍA NUTRICIONAL)</p>
@@ -19,8 +19,8 @@ const Training = () => {
                                 <p className="title5">No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
-                                <video width="100%" height="auto" controls autoplay loop>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
+                                <video controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
@@ -41,7 +41,7 @@ const Training = () => {
                                 <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -63,7 +63,7 @@ const Training = () => {
                                 <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -85,7 +85,7 @@ const Training = () => {
                                 <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -107,7 +107,7 @@ const Training = () => {
                                 <p>No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.

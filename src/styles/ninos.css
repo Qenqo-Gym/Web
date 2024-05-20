@@ -58,6 +58,7 @@
     .option-image {
         height: 300px; /* Altura ajustada para dispositivos más pequeños */
     }
+
 }
 
 /* Estilo para el título */
@@ -74,3 +75,4 @@
     top: 0px; /* Mueve el título 50px hacia arriba */
     transform: translateY(-50%); /* Ajusta el desplazamiento para centrar verticalmente */
 }
+

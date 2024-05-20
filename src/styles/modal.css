@@ -12,10 +12,10 @@
 
 .Modal {
     position: relative;
-    width: 40%;
+    width: 60%;
     background: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     outline: none;
 }
 
@@ -81,4 +81,16 @@ video {
     /* Fija la altura del video */
     object-fit: cover;
     /* Recorta el video para que sea cuadrado */
+}
+
+/* modal version mobile */
+@media (max-width: 768px) {
+    .Modal {
+        width: 85%;
+    }
+
+    .container h3{
+        display: none;
+      }
+    
 }

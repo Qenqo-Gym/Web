@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
+
 function Services() {
     const settings = {
         dots: true,
@@ -28,21 +29,36 @@ function Services() {
             <section className="services section" id="servicios">
                 <h2>SERVICIOS</h2>
                 <h3>CENTRO DE PREPARACIÓN FÍSICA Y NUTRICIÓN</h3>
-                <Slider {...settings}>
+                <br></br>
+                <div className="slider-container">
+                    <Slider {...settings}>
+                        {images.map((image) => (
+                            <div key={image.id} className="carousel-slide">
+                                <Link to={image.url}>
+                                    <div className="image-container">
+                                        <img src={image.src} alt={image.alt} className="carousel-image" />
+                                        <h3>{image.title}</h3>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+                <div className="vertical-list">
                     {images.map((image) => (
-                        <div key={image.id} className="carousel-slide">
+                        <div key={image.id} className="list-item">
                             <Link to={image.url}>
                                 <div className="image-container">
-                                    <img src={image.src} alt={image.alt} className="carousel-image" />
+                                    <img src={image.src} alt={image.alt} className="list-image" />
                                     <h3>{image.title}</h3>
                                 </div>
                             </Link>
                         </div>
                     ))}
-                </Slider>
+                </div>
             </section>
         </div>
     )
 }
 
-export default Services
+export default Services;
