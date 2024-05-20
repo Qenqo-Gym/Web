@@ -80,6 +80,11 @@
 }
 
 @media (max-width: 768px) {
+    .ninos h2{
+        margin-top: 20vh;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
     .options-container {
         flex-direction: column;
     }
@@ -91,4 +96,5 @@
     .option-image {
         height: 300px;
     }
+ 
 }

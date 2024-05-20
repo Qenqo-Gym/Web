@@ -64,27 +64,34 @@
 }
 
 .carousel-slide {
-    display: flex !important;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 30vw;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .carousel-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Esto asegura que la imagen cubra completamente el contenedor */
+    object-fit: cover; 
 }
 
 .carousel-slide h4 {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     color: #fff;
-    padding: 10px;
+    font-size: 200%;
     border-radius: 5px;
-    text-align: center;
+    text-align: center; 
+    
 }
 
 .slick-prev,
@@ -110,33 +117,54 @@
     /* Ajusta este valor para mover la flecha hacia adentro */
 }
 
-@media (max-width: 1200px) {
-    .services h2 {
-        font-size: calc(4vh + 4vw);
-    }
-
-    .services h3 {
-        font-size: 3vw;
-    }
+.vertical-list {
+    display: none;
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 768px) {
+    .slider-container {
+        display: none;
+    }
+    .vertical-list {
+        display: block;
+        width: 100%;
+    }
     .services h2 {
-        font-size: calc(4vh + 4vw);
+        font-size: 6vh;
+        margin-top: 5.5vh;
     }
 
     .services h3 {
-        font-size: 3vw;
+        font-size: 3vh;
+        margin: 1vh;
     }
 
-    .services h4 {
+    .list-item {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .image-container{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .list-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .list-item h3{
+        position: absolute;
+        bottom: 10px;
+        color: #fff;
         font-size: 20px;
     }
-}
-
-@media (max-width: 400px) {
-    .image-container {
-        width: 100vw;
-        height: 120vw;
-    }
+    
+    
 }
