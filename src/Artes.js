@@ -19,7 +19,7 @@ function Artes() {
                                 <p className="title5">No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -44,7 +44,7 @@ function Artes() {
                                 <p className="title5">No aplica congelamiento Vigencia de 1 mes<br />*Incluye IGV<br />* 5% adicional por POS</p>
                                 <button className="button-reservar">RESERVAR</button>
                             </div>
-                            <div style={{ flex: 1, marginLeft: '20px' }}>
+                            <div className='video' style={{ flex: 1, marginLeft: '20px' }}>
                                 <video width="100%" height="auto" controls autoplay loop>
                                     <source src="/videos/qenqo1.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.

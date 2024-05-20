@@ -12,23 +12,9 @@ function Services() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false, /* cambiar despues de debuggear*/
+        autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
     };
     const images = [
         { id: 1, src: '/images/open_gym.jpg', alt: 'Planes de Entrenamiento', title: 'PLANES DE ENTRENAMIENTO', url: "/planes-de-entrenamiento" },

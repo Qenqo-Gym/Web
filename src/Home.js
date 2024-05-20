@@ -87,15 +87,7 @@ function Home() {
         <div className="App snap-container">
             {/* Sección Hero */}
             <div className="hero-section section" id="home">
-                <div>
-                    <img src="/images/logo.png" alt="Logo" className="logo"
-                        style={{
-                            position: 'absolute',
-                            objectFit: 'cover',
-                            zIndex: '2'
-                        }}
-                    />
-                </div>
+               
                 <div>
                     <h1 className='title1'>"El resultado de tu entrenamiento</h1>
                     <h1 className='title2'>se ve en base a tu esfuerzo,</h1>

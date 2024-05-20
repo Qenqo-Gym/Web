@@ -13,7 +13,6 @@
     font-weight: 900; /* Black weight is typically 900 */
     font-style: normal;
   }
-
 .services {
     background-color: #141414;
     height: 100vh;
@@ -23,44 +22,26 @@
     color: white;
     box-sizing: border-box;
      padding-top: 5vh;
+ }
+
+.services h3 {
+    font-family: "Vibrocentric";
+    font-weight: 400;
+    font-size: 5vh;
+    font-style: italic;
+    color: white;
+    width: auto;
+    margin: 2vh;
 }
 
 .services h2 {
     font-family: "Archena";
     font-weight: 400;
-    font-size: calc(4vh + 4vw);
+    font-size: 10vh;
     font-style: italic;
     color: #42338e;
     width: auto;
     margin: 2vh;
-}
-
-.services h3 {
-    font-family: "Vibrocentric";
-    font-weight: 400;
-    font-size: calc(2vh + 2vw);
-    font-style: italic;
-    color: white;
-    width: auto;
-    margin: 2vh;
-}
-
-.services h4 {
-    font-family: "Vibrocentric";
-    font-weight: 400;
-    font-size: calc(1.5vh + 1.5vw);
-    font-style: italic;
-    color: white;
-    width: auto;
-    margin: 2vh;
-}
-
-.image-container {
-    /*width: 25vw;
-    height: 30vw;*/
-    width: 400px;
-    height: 500px;
-    position: relative;
 }
 
 .carousel-slide {
@@ -84,7 +65,7 @@
     object-fit: cover; 
 }
 
-.carousel-slide h4 {
+.carousel-slide h3 {
     position: absolute;
     bottom: 20px;
     color: #fff;

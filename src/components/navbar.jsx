@@ -26,6 +26,7 @@ function Navbar() {
     <div className="navbar">
       {isMobile ? (
         <>
+          <img className="logo" src="/images/logo.png" alt="Logo" />
           <button className="hamburger-menu" onClick={toggleMenu} style={ { backgroundColor: "transparent" }          }>
             {isOpen ? <>&#10005;</> : <>&#9776;</>}
           </button>
