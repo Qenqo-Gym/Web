@@ -10,9 +10,25 @@
     font-weight: 900; /* Black weight is typically 900 */
     font-style: normal;
   }
+
+  .detalle{
+    width: 80%;
+  }
+  .details-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100vh;
+    margin-top: 20vh;
+    color: white;
+    box-sizing: border-box;
+  
+  }
 .nutricion {
     background-color: #141414;
     height: 100vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -47,4 +63,22 @@
     color: #42338e;
     width: auto;
     margin: 2vh;
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+  .details-container {
+    height: fit-content;
+  }
+    .nutricion h2 {
+        font-size: 8vh;
+    }
+    .nutricion h1 {
+        font-size: 1.5vh;
+        /* espacio entre lineas */
+        line-height: 1.2;
+    }
+    .nutricion h3 {
+        font-size: 2vh;
+    }
 }

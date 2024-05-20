@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Archena';
+    src: url('../../public/fonts/Archena.otf') format('truetype');
+    font-weight: 900; /* Black weight is typically 900 */
+    font-style: normal;
+  }
+
 .opengym {
     background-size: cover;
     background-position: center;
@@ -26,7 +33,7 @@
 }
 
 .opengym h2 {
-    font-family: "Anton", sans-serif; /* Considera cambiar a una fuente que soporte estilos más gruesos si Anton no es suficiente */
+    font-family: 'Archena'; /* Considera cambiar a una fuente que soporte estilos más gruesos si Anton no es suficiente */
     font-weight: 700; /* Hace el texto más grueso; ajusta según necesidades */
     font-size: 5rem;
     font-style: italic; /* Mantiene un tamaño de fuente grande */
@@ -96,8 +103,36 @@
     background-color: #42338e;
 }
 
+
 @media (max-width: 768px) {
-    .details-container {
-        padding: 10px;
+
+    .opengym h2 {
+        font-weight: 700; /* Hace el texto más grueso; ajusta según necesidades */
+        font-size: 4rem;
+        font-style: italic; /* Mantiene un tamaño de fuente grande */
+        color: #42338e; /* Color blanco para legibilidad */
+        margin-bottom: 20px; /* Espacio debajo del título */
+        position: absolute;
+        top: 6vh; /* Posición verticalmente en la vista */
+        width: 100%; /* Asegura que el título se extienda en todo el ancho disponible */
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        text-transform: uppercase; /* Opcional: Transforma el texto a mayúsculas para más impacto */
+        font-stretch: expanded; /* Hace que las letras sean más anchas visualmente */
     }
+    
+    .details-container {
+        padding: 30px; /* Padding para un mejor espaciado */
+        border-radius: 10px;
+        width: 75%;
+        height: 50vh;
+        max-width: 600px; /* Limita el ancho del contenedor */
+        position: absolute;
+        margin-left: 0%;
+        top: 0%; /* Centrado vertical */
+        left: 4%; /* Centrado horizontal */
+        transform: translate(0%, 45%);/*  Ajuste fino para centrado perfecto */
+        color: #FFFFFF; /* Color de texto */
+        font-family: 'Arial', sans-serif; /* Fuente más genérica y limpia */
+        border: 5px solid white;
+        }
 }

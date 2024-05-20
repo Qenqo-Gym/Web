@@ -67,6 +67,10 @@ body {
         height: 300px; /* Altura ajustada para dispositivos más pequeños */
     }
 
+    .video{
+        display: none;
+    }
+
 }
 
 /* Estilo para el título */
